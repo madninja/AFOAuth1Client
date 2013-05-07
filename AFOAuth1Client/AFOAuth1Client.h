@@ -103,6 +103,14 @@ typedef enum {
                                 success:(void (^)(AFOAuth1Token *accessToken, id responseObject))success
                                 failure:(void (^)(NSError *error))failure;
 
+/**
+ 
+ */
+- (NSString *)authorizationHeaderForMethod:(NSString*)method
+                                      path:(NSString*)path
+                                parameters:(NSDictionary *)parameters;
+
+
 @end
 
 ///----------------
